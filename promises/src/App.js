@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './componentes/Footer/Footer';
 import ItemListContainer from './componentes/ItemListContanier/ItemListContaniner';
 import NavBar from './componentes/Navegador/NavBar';
 
@@ -7,7 +8,7 @@ function App() {
     <div >
 
       <NavBar />
-      <ItemListContainer greeting=""/> 
+      <ItemListContainer greeting=""/>
           
     </div>
 

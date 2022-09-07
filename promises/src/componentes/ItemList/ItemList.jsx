@@ -1,9 +1,15 @@
 import React from "react";
 import Item from "../Item/Item";
 
-const ItemList = ({data = []}) => {
+const ItemList = ({data}) => {
     return (
-        data.map(producto => <Item key={producto.id} info={producto}/>)
+        <div className="row">
+	        {data.map(producto => (
+		        <div key={producto.id} className="col-md-4 py-3">
+			        <Item name={producto.name} img={producto.img} precio={producto.precio} />
+		        </div>)
+	        )}
+	    </div>
     );
 };
 
